@@ -25,7 +25,7 @@ export default function PrivacyPage({ params }: { params: { locale: string } }) 
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Introduction</h2>
               <p className="mb-6">
-                GCCSOFI ("we," "our," or "us") respects your privacy and is committed to protecting 
+                GCCSOFI (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting 
                 your personal data. This privacy policy explains how we collect, use, and safeguard 
                 your information when you visit our website.
               </p>

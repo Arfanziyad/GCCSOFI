@@ -32,12 +32,12 @@ export default function TermsPage({ params }: { params: { locale: string } }) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Use License</h2>
               <p className="mb-6">
                 Permission is granted to temporarily access the materials (information or software) 
-                on GCCSOFI's website for personal, non-commercial transitory viewing only.
+                on GCCSOFI&apos;s website for personal, non-commercial transitory viewing only.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Disclaimer</h2>
               <p className="mb-6">
-                The materials on GCCSOFI's website are provided on an 'as is' basis. GCCSOFI makes 
+                The materials on GCCSOFI&apos;s website are provided on an &apos;as is&apos; basis. GCCSOFI makes 
                 no warranties, expressed or implied, and hereby disclaims and negates all other 
                 warranties including, without limitation, implied warranties or conditions of 
                 merchantability, fitness for a particular purpose, or non-infringement of intellectual 
@@ -48,7 +48,7 @@ export default function TermsPage({ params }: { params: { locale: string } }) {
               <p className="mb-6">
                 In no event shall GCCSOFI or its suppliers be liable for any damages (including, 
                 without limitation, damages for loss of data or profit, or due to business interruption) 
-                arising out of the use or inability to use the materials on GCCSOFI's website.
+                arising out of the use or inability to use the materials on GCCSOFI&apos;s website.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">Modifications</h2>

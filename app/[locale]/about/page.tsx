@@ -186,7 +186,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
               Ready to Work With Us?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Let's discuss how we can help bring your project to life
+              Let&apos;s discuss how we can help bring your project to life
             </p>
             <Link
               href={`/${params.locale}/contact`}

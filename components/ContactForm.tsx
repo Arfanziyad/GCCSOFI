@@ -41,7 +41,7 @@ export default function ContactForm() {
             Get In Touch
           </h2>
           <p className="text-gray-600 text-lg">
-            Have a project in mind? Let's discuss how we can help.
+            Have a project in mind? Let&apos;s discuss how we can help.
           </p>
         </motion.div>
 

@@ -160,7 +160,7 @@ export default function ProjectPageContent({ project, locale }: ProjectPageConte
               Want a Similar Project?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Let's discuss how we can bring your vision to life
+              Let&apos;s discuss how we can bring your vision to life
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Link
