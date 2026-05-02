@@ -67,8 +67,6 @@ export default function PrivacyPage({ params }: { params: { locale: string } }) 
           </motion.div>
         </div>
       </section>
-
-      <Footer locale={params.locale} />
     </main>
   );
 }
