@@ -1,13 +1,10 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 
 export default function PrivacyPage({ params }: { params: { locale: string } }) {
   return (
     <main className="min-h-screen">
-      <Navbar locale={params.locale} />
       
       <section className="py-32 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

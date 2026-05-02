@@ -16,7 +16,7 @@ export default function ContactForm() {
     e.preventDefault();
     // Frontend only - no backend yet
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will contact you soon.');
+    alert('Thank you for contacting Gulf Solidarity Contracting Co. We will review your inquiry.');
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -38,10 +38,10 @@ export default function ContactForm() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
-            Get In Touch
+            Send an Inquiry
           </h2>
           <p className="text-gray-600 text-lg">
-            Have a project in mind? Let&apos;s discuss how we can help.
+            Contact us for architectural products, fire and safety, electrical, manpower supply, equipment supply, transportation, or trading requirements.
           </p>
         </motion.div>
 
@@ -98,7 +98,7 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-blue focus:border-transparent outline-none transition"
-              placeholder="+971 50 123 4567"
+              placeholder="+966 59 486 7690"
             />
           </div>
 
@@ -114,7 +114,7 @@ export default function ContactForm() {
               required
               rows={5}
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-blue focus:border-transparent outline-none transition resize-none"
-              placeholder="Tell us about your project..."
+              placeholder="Tell us about your requirement..."
             />
           </div>
 
@@ -122,7 +122,7 @@ export default function ContactForm() {
             type="submit"
             className="w-full bg-primary-red text-white py-4 rounded-md font-semibold hover:bg-red-700 transition-colors flex items-center justify-center space-x-2 group"
           >
-            <span>Send Message</span>
+            <span>Submit Inquiry</span>
             <Send size={20} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </motion.form>

@@ -10,7 +10,7 @@ export default function HeroSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 4000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
@@ -23,7 +23,7 @@ export default function HeroSlider() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.8 }}
           className="absolute inset-0"
         >
           <div
@@ -32,28 +32,39 @@ export default function HeroSlider() {
               backgroundImage: `url(${heroSlides[currentSlide].image})`,
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/70" />
         </motion.div>
       </AnimatePresence>
 
       {/* Fixed Content */}
       <div className="relative h-full flex items-center justify-center">
         <div className="text-center text-white px-4">
+          <p className="text-2xl md:text-4xl font-bold tracking-[0.3em] uppercase text-white mb-4 drop-shadow-lg">
+            Gulf Solidarity
+          </p>
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            transition={{ delay: 0.35, duration: 0.8 }}
+            className="font-display text-5xl md:text-7xl font-light tracking-wide mb-3"
           >
-            PRODUCTS
+            Architectural Products
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto"
+            transition={{ delay: 0.45, duration: 0.8 }}
+            className="text-sm md:text-base font-light tracking-[0.25em] uppercase text-white/80 mb-8"
           >
-            Premium Construction & Interior Solutions
+            Division
+          </motion.p>
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="text-base md:text-lg text-white font-semibold max-w-2xl mx-auto leading-relaxed drop-shadow-md"
+          >
+            Premium architectural solutions crafted for the Kingdom of Saudi Arabia — from operable walls and glass systems to bespoke office partitions and façade products.
           </motion.p>
         </div>
       </div>

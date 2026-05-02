@@ -16,6 +16,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['var(--font-cormorant)', 'Georgia', 'serif'],
       },
     },
   },

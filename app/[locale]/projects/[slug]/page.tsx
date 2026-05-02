@@ -1,8 +1,5 @@
 import { notFound } from 'next/navigation';
 import { projects } from '@/data/projects';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingContactSidebar from '@/components/FloatingContactSidebar';
 import ProjectPageContent from './ProjectPageContent';
 
 export async function generateStaticParams() {
@@ -39,10 +36,7 @@ export default function ProjectPage({
 
   return (
     <main className="min-h-screen">
-      <Navbar locale={params.locale} />
       <ProjectPageContent project={project} locale={params.locale} />
-      <Footer locale={params.locale} />
-      <FloatingContactSidebar />
     </main>
   );
 }

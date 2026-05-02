@@ -1,8 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingContactSidebar from '@/components/FloatingContactSidebar';
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/products';
 import { motion } from 'framer-motion';
@@ -10,7 +7,6 @@ import { motion } from 'framer-motion';
 export default function ProductsPage({ params }: { params: { locale: string } }) {
   return (
     <main className="min-h-screen">
-      <Navbar locale={params.locale} />
       
       {/* Hero Section */}
       <section className="relative h-[400px] mt-20 bg-gradient-to-r from-primary-blue to-blue-600">
@@ -22,10 +18,10 @@ export default function ProductsPage({ params }: { params: { locale: string } })
             className="max-w-3xl"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Our Products
+              Architectural Products
             </h1>
             <p className="text-xl text-white/90">
-              Comprehensive range of premium construction and interior solutions
+              Washroom cubicles, Alifu cubicles, IPS panels, lockers, glass partitions, movable partitions, and raised floor.
             </p>
           </motion.div>
         </div>
@@ -47,8 +43,6 @@ export default function ProductsPage({ params }: { params: { locale: string } })
         </div>
       </section>
 
-      <Footer locale={params.locale} />
-      <FloatingContactSidebar />
     </main>
   );
 }

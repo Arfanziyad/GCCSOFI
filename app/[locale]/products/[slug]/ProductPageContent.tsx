@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Product } from '@/types';
 import { Check, ArrowRight, Phone } from 'lucide-react';
 
@@ -41,12 +42,47 @@ export default function ProductPageContent({ product, locale }: ProductPageConte
               href={`/${locale}/contact`}
               className="inline-flex items-center space-x-2 bg-primary-red text-white px-8 py-4 rounded-md font-semibold hover:bg-red-700 transition-colors"
             >
-              <span>Request Quote</span>
+              <span>Contact Us</span>
               <ArrowRight size={20} />
             </Link>
           </motion.div>
         </div>
       </section>
+
+      {/* Brand Partner Section */}
+      {product.brandPartner && (
+        <section className="bg-white border-b border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex flex-col sm:flex-row items-center justify-between gap-6"
+            >
+              <div>
+                <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gray-400 mb-1">
+                  Official Partner
+                </p>
+                <p className="text-gray-700 text-xl font-medium">
+                  {product.brandPartner.tagline}
+                </p>
+              </div>
+              <div className="flex items-center gap-6">
+                <div className="h-px w-12 bg-gray-200 hidden sm:block" />
+                <div className="relative h-14 w-40">
+                  <Image
+                    src={product.brandPartner.logo}
+                    alt={`${product.brandPartner.name} logo`}
+                    fill
+                    className="object-contain"
+                    sizes="160px"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* Features Section */}
       <section className="py-20 bg-white">
@@ -60,7 +96,7 @@ export default function ProductPageContent({ product, locale }: ProductPageConte
           >
             <h2 className="text-4xl font-bold text-primary-blue mb-4">Key Features</h2>
             <p className="text-gray-600 text-lg">
-              Discover what makes our {product.title.toLowerCase()} exceptional
+              Core product information for {product.title.toLowerCase()}
             </p>
           </motion.div>
 
@@ -96,7 +132,7 @@ export default function ProductPageContent({ product, locale }: ProductPageConte
           >
             <h2 className="text-4xl font-bold text-primary-blue mb-4">Gallery</h2>
             <p className="text-gray-600 text-lg">
-              View our {product.title.toLowerCase()} in action
+              Reference images for {product.title.toLowerCase()}
             </p>
           </motion.div>
 
@@ -190,25 +226,25 @@ export default function ProductPageContent({ product, locale }: ProductPageConte
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Get Started?
+              Need Product Information?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Contact us today for a free consultation and quote
+              Contact Gulf Solidarity Contracting Co. for product details and support.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Link
                 href={`/${locale}/contact`}
                 className="inline-flex items-center space-x-2 bg-primary-red text-white px-8 py-4 rounded-md font-semibold hover:bg-red-700 transition-colors"
               >
-                <span>Request Quote</span>
+                <span>Contact Us</span>
                 <ArrowRight size={20} />
               </Link>
               <a
-                href="tel:+971501234567"
+                href="tel:+966594867690"
                 className="inline-flex items-center space-x-2 bg-white text-primary-blue px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition-colors"
               >
                 <Phone size={20} />
-                <span>Call Us Now</span>
+                <span>Call Us</span>
               </a>
             </div>
           </motion.div>

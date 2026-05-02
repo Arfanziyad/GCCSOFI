@@ -1,8 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingContactSidebar from '@/components/FloatingContactSidebar';
 import ContactForm from '@/components/ContactForm';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
@@ -11,29 +8,28 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
   const contactInfo = [
     {
       icon: Phone,
-      title: 'Phone',
-      details: ['+971 50 123 4567', '+971 4 123 4567'],
+      title: 'Phones',
+      details: ['+966 59 486 7690', '+966 55 781 0477', '+966 54 470 3587', '+966 59 679 8083'],
     },
     {
       icon: Mail,
-      title: 'Email',
-      details: ['info@gccsofi.com', 'sales@gccsofi.com'],
+      title: 'Emails',
+      details: ['sales@gulfsolidarity.net', 'info@gulfsolidarity.net', 'farooq@gulfsolidarity.net', 'ziyad@gulfsolidarity.net'],
     },
     {
       icon: MapPin,
-      title: 'Address',
-      details: ['Dubai, United Arab Emirates'],
+      title: 'Dammam',
+      details: ['8240, 9th Street, Al Souq District'],
     },
     {
       icon: Clock,
-      title: 'Working Hours',
-      details: ['Sunday - Thursday: 8:00 AM - 6:00 PM', 'Friday - Saturday: Closed'],
+      title: 'Yanbu',
+      details: ['King Abdulaziz Rd'],
     },
   ];
 
   return (
     <main className="min-h-screen">
-      <Navbar locale={params.locale} />
       
       {/* Hero Section */}
       <section className="relative h-[400px] mt-20 bg-gradient-to-r from-primary-blue to-blue-600">
@@ -48,7 +44,7 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
               Contact Us
             </h1>
             <p className="text-xl text-white/90">
-              Get in touch with our team for any inquiries or project consultations
+              Reach Gulf Solidarity Contracting Co. for product and service inquiries in KSA.
             </p>
           </motion.div>
         </div>
@@ -86,8 +82,6 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
 
       <ContactForm />
       
-      <Footer locale={params.locale} />
-      <FloatingContactSidebar />
     </main>
   );
 }

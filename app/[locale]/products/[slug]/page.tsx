@@ -1,8 +1,5 @@
 import { notFound } from 'next/navigation';
 import { products } from '@/data/products';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingContactSidebar from '@/components/FloatingContactSidebar';
 import ProductPageContent from './ProductPageContent';
 
 export async function generateStaticParams() {
@@ -39,10 +36,7 @@ export default function ProductPage({
 
   return (
     <main className="min-h-screen">
-      <Navbar locale={params.locale} />
       <ProductPageContent product={product} locale={params.locale} />
-      <Footer locale={params.locale} />
-      <FloatingContactSidebar />
     </main>
   );
 }

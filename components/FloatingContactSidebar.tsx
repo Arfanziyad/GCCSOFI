@@ -10,26 +10,26 @@ export default function FloatingContactSidebar() {
   const contacts = [
     {
       icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/company/gccsofi',
+      label: 'Website',
+      href: 'http://www.gulfsolidarity.net',
       color: 'hover:bg-blue-600',
     },
     {
       icon: Phone,
       label: 'Phone',
-      href: 'tel:+971501234567',
+      href: 'tel:+966594867690',
       color: 'hover:bg-green-600',
     },
     {
       icon: MessageCircle,
-      label: 'WhatsApp',
-      href: 'https://wa.me/971501234567',
+      label: 'Phone 2',
+      href: 'tel:+966557810477',
       color: 'hover:bg-green-500',
     },
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:info@gccsofi.com',
+      href: 'mailto:info@gulfsolidarity.net',
       color: 'hover:bg-red-600',
     },
   ];

@@ -1,8 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingContactSidebar from '@/components/FloatingContactSidebar';
 import { motion } from 'framer-motion';
 import { Target, Award, Users, Globe } from 'lucide-react';
 import Link from 'next/link';
@@ -11,36 +8,35 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
   const values = [
     {
       icon: Target,
-      title: 'Our Mission',
-      description: 'To deliver innovative, high-quality construction and interior solutions that exceed client expectations across the GCC region.',
+      title: 'Quality',
+      description: 'We deliver exceptional quality backed by ISO standards and rigorous inspection procedures.',
     },
     {
       icon: Award,
-      title: 'Excellence',
-      description: 'We maintain the highest standards of quality, craftsmanship, and professionalism in every project we undertake.',
+      title: 'Customer Satisfaction',
+      description: 'We tailor our services to client needs with customized support and immediate response.',
     },
     {
       icon: Users,
-      title: 'Client-Focused',
-      description: 'Our clients success is our success. We build lasting relationships through exceptional service and results.',
+      title: 'Integrity',
+      description: 'We provide reliable construction support, labor supply, and specialized engineering services.',
     },
     {
       icon: Globe,
-      title: 'Regional Expertise',
-      description: 'With extensive experience across the Gulf region, we understand local requirements and international standards.',
+      title: 'Sustainability',
+      description: 'We maintain a safety-focused work culture with environmental protection as a core consideration.',
     },
   ];
 
   const stats = [
-    { number: '500+', label: 'Projects Completed' },
-    { number: '15+', label: 'Years Experience' },
-    { number: '6', label: 'GCC Countries' },
-    { number: '100%', label: 'Client Satisfaction' },
+    { number: '24', label: 'Years of Service in KSA' },
+    { number: '2000', label: 'Established' },
+    { number: 'Saudi', label: 'Ownership' },
+    { number: '3', label: 'Workforce Groups' },
   ];
 
   return (
     <main className="min-h-screen">
-      <Navbar locale={params.locale} />
       
       {/* Hero Section */}
       <section className="relative h-[500px] mt-20">
@@ -58,10 +54,10 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
             className="max-w-3xl"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              About GCCSOFI
+              About Gulf Solidarity
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Leading the way in construction and interior solutions across the Gulf region since 2008
+              A wholly Saudi-owned organization with 24 years of service in KSA.
             </p>
           </motion.div>
         </div>
@@ -81,17 +77,13 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
                 Who We Are
               </h2>
               <p className="text-gray-600 text-lg mb-4">
-                GCCSOFI (Gulf Solidarity) is a premier provider of construction and interior solutions, 
-                specializing in operable walls, moving glass walls, HPL washroom cubicles, pivot doors, 
-                hydraulic doors, terrace solutions, and office partitions.
+                Gulf Solidarity Contracting Co. is a wholly Saudi-owned organization established in 2000 as Misfer Al Khurby General Contracting Company.
               </p>
               <p className="text-gray-600 text-lg mb-4">
-                With over 15 years of experience, we have successfully completed hundreds of projects 
-                across the GCC region, serving commercial, hospitality, educational, and residential sectors.
+                Our business areas include architectural products, fire and safety, electrical, manpower supply, equipment supply, transportation, and trading.
               </p>
               <p className="text-gray-600 text-lg">
-                Our commitment to quality, innovation, and customer satisfaction has established us as a 
-                trusted partner for leading developers, architects, and contractors throughout the Gulf.
+                Our workforce includes engineers, technicians, and skilled labor, supported by a specialized engineering department, reliable construction and labor supply, and short-term and long-term manpower services under the leadership of CEO Misfer Bin Ali Al-Kurbi.
               </p>
             </motion.div>
 
@@ -148,7 +140,7 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
               Our Values
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              The principles that guide everything we do
+              The core values of our architectural products division
             </p>
           </motion.div>
 
@@ -183,23 +175,21 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-bold text-primary-blue mb-6">
-              Ready to Work With Us?
+              Need More Information?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Let&apos;s discuss how we can help bring your project to life
+              Contact our team for product, manpower, equipment, fire and safety, electrical, transportation, or trading inquiries.
             </p>
             <Link
               href={`/${params.locale}/contact`}
               className="inline-block bg-primary-red text-white px-8 py-4 rounded-md font-semibold hover:bg-red-700 transition-colors"
             >
-              Get In Touch
+              Contact Us
             </Link>
           </motion.div>
         </div>
       </section>
 
-      <Footer locale={params.locale} />
-      <FloatingContactSidebar />
     </main>
   );
 }

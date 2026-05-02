@@ -11,10 +11,10 @@ export default function ProductGrid({ locale }: ProductGridProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
-            Our Products
+            Architectural Products Division
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Discover our comprehensive range of premium construction and interior solutions
+            Washroom cubicles, Alifu cubicles, IPS panels, lockers, glass partitions, movable partitions, and raised floor systems.
           </p>
         </div>
 

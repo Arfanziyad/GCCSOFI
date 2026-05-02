@@ -6,27 +6,26 @@ import { FileText, Presentation, Download } from 'lucide-react';
 export default function BrochureDownloads() {
   const brochures = [
     {
-      title: 'Company Brochure',
-      description: 'Complete overview of our products and services',
+      title: 'Website',
+      description: 'Visit our website for company, product, and contact information',
       format: 'PDF',
-      size: '3.2 MB',
+      size: 'Online',
       icon: FileText,
-      file: '/downloads/gccsofi-brochure.pdf',
+      file: 'http://www.gulfsolidarity.net',
     },
     {
-      title: 'Product Presentation',
-      description: 'Detailed presentation of our product range',
-      format: 'PPT',
-      size: '8.5 MB',
+      title: 'Contact Emails',
+      description: 'Reach sales or general inquiries through our listed email addresses',
+      format: 'INFO',
+      size: '4 Emails',
       icon: Presentation,
-      file: '/downloads/gccsofi-presentation.ppt',
+      file: 'mailto:sales@gulfsolidarity.net',
     },
   ];
 
   const handleDownload = (file: string, title: string) => {
-    // Placeholder download functionality
-    console.log(`Downloading: ${file}`);
-    alert(`Download started: ${title}\n\nNote: This is a placeholder. In production, actual files will be downloaded.`);
+    window.open(file, '_blank', 'noopener,noreferrer');
+    alert(`${title} opened successfully.`);
   };
 
   return (
@@ -40,10 +39,10 @@ export default function BrochureDownloads() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
-            Download Resources
+            Resources
           </h2>
           <p className="text-gray-600 text-lg">
-            Get detailed information about our products and services
+            Access the official website and key contact channels
           </p>
         </motion.div>
 
@@ -76,7 +75,7 @@ export default function BrochureDownloads() {
                   className="w-full bg-white text-primary-blue py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2 group"
                 >
                   <Download size={20} className="group-hover:translate-y-1 transition-transform" />
-                  <span>Download {brochure.format}</span>
+                  <span>Open {brochure.format}</span>
                 </button>
               </div>
             </motion.div>

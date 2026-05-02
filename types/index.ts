@@ -7,6 +7,11 @@ export interface Product {
   features: string[];
   specs: { label: string; value: string }[];
   gallery: string[];
+  brandPartner?: {
+    name: string;
+    logo: string;
+    tagline: string;
+  };
 }
 
 export interface Project {

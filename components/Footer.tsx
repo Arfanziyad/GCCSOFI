@@ -14,13 +14,13 @@ export default function Footer({ locale }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="col-span-1">
-            <h3 className="text-2xl font-bold mb-4">GCCSOFI</h3>
+            <h3 className="text-2xl font-bold mb-4">Gulf Solidarity</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Gulf Solidarity - Leading provider of premium construction and interior solutions across the GCC region.
+              Gulf Solidarity Contracting Co. is a wholly Saudi-owned organization serving KSA since 2000 across architectural products, fire and safety, electrical, manpower supply, equipment supply, transportation, and trading.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/company/gccsofi"
+                href="http://www.gulfsolidarity.net"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -28,13 +28,13 @@ export default function Footer({ locale }: FooterProps) {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:info@gccsofi.com"
+                href="mailto:info@gulfsolidarity.net"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Mail size={20} />
               </a>
               <a
-                href="tel:+971501234567"
+                href="tel:+966594867690"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Phone size={20} />
@@ -79,28 +79,28 @@ export default function Footer({ locale }: FooterProps) {
             <h4 className="text-lg font-semibold mb-4">Products</h4>
             <ul className="space-y-2">
               <li>
-                <Link href={`/${locale}/products/operable-walls-moving-glass-walls`} className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Operable Walls
+                <Link href={`/${locale}/products/washroom-cubicles`} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Washroom Cubicles
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/products/hpl-washroom-cubicles`} className="text-gray-400 hover:text-white transition-colors text-sm">
-                  HPL Cubicles
+                <Link href={`/${locale}/products/alifu-cubicles`} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Alifu Cubicles
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/products/pivot-doors`} className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Pivot Doors
+                <Link href={`/${locale}/products/ips-panels-v-epps`} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  IPS Panels
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/products/hydraulic-doors`} className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Hydraulic Doors
+                <Link href={`/${locale}/products/glass-partitions`} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Glass Partitions
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/products/office-partitions`} className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Office Partitions
+                <Link href={`/${locale}/products/raised-floor`} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Raised Floor
                 </Link>
               </li>
             </ul>
@@ -112,15 +112,15 @@ export default function Footer({ locale }: FooterProps) {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-gray-400">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
-                <span>Dubai, United Arab Emirates</span>
+                <span>8240, 9th Street, Al Souq District, Dammam</span>
               </li>
               <li className="flex items-start space-x-2 text-sm text-gray-400">
                 <Phone size={18} className="mt-0.5 flex-shrink-0" />
-                <span>+971 50 123 4567</span>
+                <span>+966 59 486 7690</span>
               </li>
               <li className="flex items-start space-x-2 text-sm text-gray-400">
                 <Mail size={18} className="mt-0.5 flex-shrink-0" />
-                <span>info@gccsofi.com</span>
+                <span>info@gulfsolidarity.net</span>
               </li>
             </ul>
           </div>
@@ -128,7 +128,7 @@ export default function Footer({ locale }: FooterProps) {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>© {currentYear} GCCSOFI - Gulf Solidarity. All rights reserved.</p>
+            <p>© {currentYear} Gulf Solidarity Contracting Co. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href={`/${locale}/privacy`} className="hover:text-white transition-colors">
                 Privacy Policy
